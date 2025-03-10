@@ -1,0 +1,491 @@
+/* font declarations
+@font-face { font-family: 'FontAwesome'; font-weight: normal; font-style: normal; src: url('../fonts/FontAwesome/FontAwesome.woff') format('woff'); unicode-range: U+00-FFFF; }
+*/
+
+/* -------------------------------------- */
+/* color markers */
+/*
+
+weiss: #ffffff
+rot: #ce1109
+blau: #051861
+schwarz: #000000
+
+hellblau: #6287c6
+blaugrau: #606f89
+
+blau-submenu-normal: #f8f8f8;
+blau-submenu-high: #e5ecf3;
+rot-hover-text: #d28581
+rot-hover-footer: #ff4c44
+
+*/
+
+* {
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 20px 50px 0 50px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    height: auto;
+    margin: 0;
+    align-items: flex-end;
+    border-bottom: 2px solid #09185d;
+    padding: 0 0 18px;
+    max-width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#logo1 {
+    max-width: 225px;
+    margin-bottom: -8px;
+    margin-top: 12px;
+    margin-right: 20px;
+}
+
+.mainlinks {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-left: 20px;
+}
+
+.mainlinks div {
+    margin: 0 10px;
+    flex: 1;
+}
+
+.mainlinks div div > a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+    margin-left: -10px;
+    padding: 10px 15px;
+    width: 125px;
+    font-size: 16px;
+}
+
+.mainlinks div div > a:hover {
+    background-color: #c7c7c7;
+}
+
+.mainlinks div > p {
+    display: flex;
+    padding: 8px 15px;
+    justify-content: center;
+    width: 125px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.mainlinks > div > div {
+    background-color: transparent;
+}
+
+#club {
+    text-decoration: none;
+    background-color: #09185d;
+    opacity: 0.9;
+    text-align: center;
+    color: white;
+}
+
+#aktivitaten {
+    text-decoration: none;
+    background-color: #09185d;
+    opacity: 0.65;
+    text-align: center;
+    color: white
+}
+
+#news_agenda {
+    text-decoration: none;
+    background-color: #09185d;
+    opacity: 0.65;
+    text-align: center;
+    color: white;
+}
+
+#mitgliedschaft {
+    text-decoration: none;
+    background-color: #09185d;
+    opacity: 0.65;
+    text-align: center;
+    color: white;
+}
+
+#links {
+    text-decoration: none;
+    background-color: #09185d;
+    opacity: 0.65;
+    text-align: center;
+    color: white;
+}
+
+.uulink {
+    position: fixed;
+    top: 80px;
+    display: none;
+    z-index: 1000;
+}
+
+.unterlink {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: #e3e3e3;
+}
+
+.uulink a:first-child {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.uulink a:last-child {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+/*
+.club:hover .uulink {
+    display:block !important;
+}
+*/
+
+main {
+    margin-top: 150px;
+}
+
+#imgswitch {
+    min-width: 100%;
+	height: 500px;
+	background-size: cover;
+	background-position:center;
+	background-color: #09185d;
+	border-top: 2px solid #ce1109;
+	border-bottom: 2px solid #ce1109;
+	border-top: 2px solid #09185d;
+    border-right: 2px solid #09185d;
+	border-bottom: 2px solid #09185d;
+    border-left: 2px solid #09185d;
+	overflow: hidden;
+    border-radius: 20px;
+}
+
+.maininner {
+    margin: 100px 60px;
+}
+
+.willkommentitel {
+    color: #09185d;
+    font-size: 54px;
+}
+
+.willkommentext {
+    font-size: 30px;
+    margin: 10px 0 100px 0;
+}
+
+.news1 {
+    width: 100%;
+    background-color: rgba(97, 112, 166, 0.4);
+    border-radius: 20px;
+}
+
+.news1top {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 30px 30px;
+}
+
+#news1img {
+    width: 150px;
+    background-color: transparent;
+}
+
+#news1sckbild {
+    height: 600px;
+    width: auto;
+}
+
+#news1gemeindebild {
+    height: 600px;
+    width: auto;
+}
+
+.news1titel {
+    font-size: 42px;
+    color: #09185d;
+    margin: 0 20px 0 40px;
+    background-color: transparent;
+}
+
+.news1img2 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+    padding: 0 0 40px 0;
+}
+
+.news1img2div, .news1img2div > div {
+    background-color: transparent;
+}
+
+.mainlinks_home {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin: 200px auto;
+}
+
+#helfer {
+    width: 300px;
+    height: auto;
+}
+
+#events {
+    width: 300px;
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lastarticle {
+    width: 100%;
+    background-color: rgba(97, 112, 166, 0.4);
+    border-radius: 20px;
+}
+
+.lastarticletop {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 30px 30px;
+}
+
+#lastarticle_img {
+    width: 150px;
+    background-color: transparent;
+}
+
+.lasttitle {
+    font-size: 42px;
+    color: #09185d;
+    margin: 0 20px 0 40px;
+    background-color: transparent;
+}
+
+.lastcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.lasttext {
+    align-self: center;
+    background-color: transparent;
+    color: black;
+    width: 75%;
+    font-size: 20px;
+}
+
+#video {
+    align-self: center;
+    margin: 80px 0;
+    width: 75%;
+    height: auto;
+}
+
+.laststatistik {
+    align-self: center;
+    font-size: 42px;
+    color: #09185d;
+    width: 75%;
+    background-color: transparent;
+}
+
+.laststatistiktext {
+    align-self: center;
+    background-color: transparent;
+    color: black;
+    width: 75%;
+    margin: 20px 0 50px;
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -50px 0 -50px;
+    background-color: #09185d;
+    padding-bottom: 60px;
+    padding-top: 30px;
+}
+
+.flinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: start;
+    width: 100%;
+    background-color: transparent;
+    margin-left: 15px;
+}
+
+.fkontakt, .fbereiche, .fservice, .fwetter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: transparent;
+    margin: 0;
+    font-size: 17px;
+}
+
+#flogo {
+    margin: 0 110px 0 0;
+    height: 80px;
+}
+
+.fkontakt *, .fbereiche *, .fservice *, .fwetter * {
+    background-color: transparent;
+    color: white;
+    font-weight: normal;
+    line-height: 23px;
+}
+
+.fkontakt > *:first-child, .fbereiche > *:first-child, .fservice > *:first-child, .fwetter > *:first-child {
+    padding: 4px 0;
+    font-weight: bold;
+}
+
+.fkontakt > a:hover, .fbereiche > a:hover, .fservice > a:hover, .fwetter > a:hover {
+    color: red;
+}
+
+@media screen and (max-width: 1170px) {
+
+    body {
+        margin: 0;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+        align-items: center;
+        position: relative;
+        width: 140%;
+    }
+
+    .mainlinks {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 0;
+    }
+
+    .mainlinks > div {
+        margin-top: 10px;
+        width: auto;
+    }
+
+    .mainlinks > div > p {
+        width: auto;
+    }
+
+    .logo1 {
+        margin-bottom: 10px;
+        margin-right: -20px;
+        padding-right: 0;
+    }
+
+    #imgswitch {
+        min-width: 10%;
+        align-self: center;
+        margin: 20px;
+        height: 450px;
+    }
+
+    .maininner {
+        margin: 50px 40px;
+    }
+
+    .willkommentitel {
+        font-size: 50px;
+    }
+
+    .news1top {
+        flex-direction: column;
+        padding: 15px 30px;
+    }
+
+    #news1img {
+        width: 120px;
+    }
+
+    .news1titel {
+        margin: 0;
+        font-size: 28px;
+    }
+
+    .news1img2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        padding-bottom: 0;
+    }
+
+    .news1img2div, .news1img2div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    #news1sckbild {
+        width: 80%;
+        height: auto;
+        align-self: center;
+    }
+
+    #news1gemeindebild {
+        width: 80%;
+        height: auto;
+        align-self: center;
+    }
+
+    .mainlinks_home {
+        margin: 0;
+    }
+
+    main {
+        margin-top: 0;
+    }
+
+    footer {
+        display: none;
+    }
+}
